@@ -4,8 +4,7 @@ const Calculator: React.FC = () => {
 
         return (
 
-                <div className="mx-auto grid grid-rows-4 grid-cols-6 gap-6 w-full max-w-2xl">
-                
+                <div id="savings-calcuator" className="mx-auto grid grid-rows-3 grid-cols-6 gap-6 w-full max-w-2xl border border-gray-200 rounded-lg p-6 shadow-md">
                     {/* Row 1: Label */}
                     <div id="savings-calculator-label" className="col-span-6 text-center">
                         <div className="p-3 text-2xl">Savings Calculator</div>
@@ -39,9 +38,6 @@ const Calculator: React.FC = () => {
                         <button className="btn btn-secondary col-span-3">Clear</button>
                         <div className="divider col-span-6"></div>
                     </div>
-
-
-
                 </div>
 
     );
