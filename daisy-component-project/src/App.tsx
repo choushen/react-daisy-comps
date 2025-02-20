@@ -1,8 +1,8 @@
-import Calculator from './components/Calculator'
+import SavingsCalculator from './components/SavingsCalculator'
 
 function App() {
   return (
-    <Calculator />  
+    <SavingsCalculator />  
   )
 }
 
