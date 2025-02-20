@@ -9,9 +9,11 @@ import App from './App.tsx'
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <Router>
-      <Routes>
-        <Route path="/" element={<App />} />
-      </Routes>
+      <div className="mx-auto">
+        <Routes>
+          <Route path="/" element={<App />} />
+        </Routes>
+      </div>
     </Router>
   </StrictMode>,
 )
