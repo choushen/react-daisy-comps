@@ -10,4 +10,4 @@ This project is not affiliated with the DaisyUI project. It is a personal projec
 
 ### Real Estate Savings Calculator Component
 
-T
+I needed this calculator component for a project I am (at the time of writing this) working on. I needed something similar in the past, so I added it to this repo.
