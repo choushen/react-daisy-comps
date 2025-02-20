@@ -1,59 +1,49 @@
-import React, { useState } from "react";
+// import React, { useState } from "react";
 
 const Calculator: React.FC = () => {
 
-    const [postcode, setPostcode] = useState<string>("");
-    const [savings, setSavings] = useState<number | null>(null);
-    const [error, setError] = useState<string | null>(null);
-    
-        // Mock savings calculation
-        const calculateSavings = (postcode: string) => {
-        if (!/^$/.test(postcode)) {
-            setError("Invalid postcode. Please enter a valid one.");
-            setSavings(null);
-            return;
-        }
-    
-        setError(null);
-    
-        // Mock: Generate a random savings amount between £100 and £500
-        const generatedSavings = Math.floor(Math.random() * (500 - 100 + 1)) + 100;
-        setSavings(generatedSavings);
-        };
-    
         return (
-        <div className="flex justify-center items-center min-h-screen bg-gray-100">
-            <div className="bg-white p-6 rounded-lg shadow-lg w-96 text-center">
-            <h2 className="text-2xl font-semibold mb-4">Find Out Your Savings</h2>
-    
-            {/* Input Field */}
-            <input
-                type="text"
-                value={postcode}
-                onChange={(e) => setPostcode(e.target.value)}
-                placeholder="Enter your postcode"
-                className="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-            />
-    
-            {/* Button */}
-            <button
-                onClick={() => calculateSavings(postcode)}
-                className="mt-4 w-full bg-blue-500 text-white p-3 rounded-lg hover:bg-blue-600 transition"
-            >
-                Calculate Savings
-            </button>
-    
-            {/* Error Message */}
-            {error && <p className="text-red-500 mt-3">{error}</p>}
-    
-            {/* Savings Result */}
-            {savings !== null && (
-                <p className="text-lg font-semibold mt-4">
-                You could save <span className="text-green-500">£{savings}</span>!
-                </p>
-            )}
-            </div>
-        </div>
+
+                <div className="mx-auto grid grid-rows-4 grid-cols-6 gap-6 w-full max-w-2xl">
+                
+                    {/* Row 1: Label */}
+                    <div id="savings-calculator-label" className="col-span-6 text-center">
+                        <div className="p-3 text-2xl">Savings Calculator</div>
+                        <div className="divider"></div>
+                    </div>
+
+                    {/* Row 2: Spinner & Input Fields */}
+                    <div className="col-span-6 grid gap-4 grid-cols-6 items-center">
+                        
+                        {/* Spinner (Left 3 Columns) */}
+                        <div id="savings-loaded-content" className="col-span-3 flex justify-center items-center">
+                        <span className="loading loading-spinner loading-x"></span>
+                        </div>
+
+                        {/* Empty Space (Middle 1 Column) */}
+                        <div className="col-span-3 flex flex-col gap-4 items-end">
+                            <label className="input">
+                                <span className="label">House Value</span>
+                                <input type="text" placeholder="URL" />
+                            </label>
+                            <label className="input">
+                                <span className="label">Postcode</span>
+                                <input type="text" placeholder="URL" />
+                            </label>
+                        </div>
+                    </div>
+
+                    {/* Row 3: Buttons */}
+                    <div className="col-span-6 grid grid-cols-6 gap-4">
+                        <button className="btn btn-primary col-span-3">Calculate</button>
+                        <button className="btn btn-secondary col-span-3">Clear</button>
+                        <div className="divider col-span-6"></div>
+                    </div>
+
+
+
+                </div>
+
     );
 
 }

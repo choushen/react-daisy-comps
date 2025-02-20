@@ -9,7 +9,7 @@ import App from './App.tsx'
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <Router>
-      <div className="mx-auto">
+      <div className="py-10 mx-auto">
         <Routes>
           <Route path="/" element={<App />} />
         </Routes>
