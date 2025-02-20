@@ -6,7 +6,10 @@ This is a React component library that uses the [DaisyUI](https://daisyui.com/) 
 
 This project is not affiliated with the DaisyUI project. It is a personal project that uses the DaisyUI CSS framework.
 
+DaisyUI 5 is currently in beta. This project uses DaisyUI 5. The date is 20/02/2025 - the offocial release date of DaisyUI 5 is 9 days from now!  
+
 ## Requirements
+
 - Node.js
 
 ## Components
