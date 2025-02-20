@@ -1,6 +1,6 @@
 // import React, { useState } from "react";
 
-const Calculator: React.FC = () => {
+const SavingsCalculator: React.FC = () => {
 
         return (
 
@@ -45,4 +45,4 @@ const Calculator: React.FC = () => {
 
 }
 
-export default Calculator
+export default SavingsCalculator

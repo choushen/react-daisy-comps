@@ -6,6 +6,9 @@ This is a React component library that uses the [DaisyUI](https://daisyui.com/) 
 
 This project is not affiliated with the DaisyUI project. It is a personal project that uses the DaisyUI CSS framework.
 
+## Requirements
+- Node.js
+
 ## Components
 
 ### Real Estate Savings Calculator Component
